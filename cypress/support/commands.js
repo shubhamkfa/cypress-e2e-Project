@@ -11,6 +11,14 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
+
+
+    Cypress.Commands.add('loginPortal',(email,password)=>{
+        cy.visit('') // this will automatically fetch base url from config file
+        cy.get('input[id="input-email"]').type(email) //value not hardcoaded here so pass parameter 
+        cy.get('input[id="input-password"]').type(password)
+        cy.get('input[class="btn btn-primary"]').click()
+    })
 //
 //
 // -- This is a child command --

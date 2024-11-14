@@ -1,0 +1,22 @@
+{
+
+
+    "login":{
+        "userName":"shubhamtest12@gmail.com",
+        "password":"Conference1!"
+
+    },
+
+    "product":{
+        "productName": "macbook"
+    },
+
+    "message":{
+
+        "successMessage":"Success: You have added MacBook to your shopping cart!"
+        
+    }
+
+
+
+}
