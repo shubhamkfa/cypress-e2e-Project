@@ -1,6 +1,7 @@
-name: Regression End-to-end tests
+name: SanityBuild_Custom script 
 on:
  push:
+    
    branches:
      - main
 jobs:
@@ -14,4 +15,6 @@ jobs:
        # and run all cypress tests
 
      - name: Cypress run 
-       uses: cypress-io/github-action@v5 
+       uses: cypress-io/github-action@v5
+       with:
+        command: npm run test:addToCart
