@@ -1,0 +1,17 @@
+name: Regression End-to-end tests
+on:
+ push:
+   branches:
+     - main
+jobs:
+ Cypress-Test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v2
+
+       #Install npm dependencies, cache them correctly 
+       # and run all cypress tests
+
+     - name: Cypress run 
+       uses: cypress-io/github-action@v5
