@@ -17,7 +17,7 @@ jobs:
        uses: cypress-io/github-action@v5 
        with : 
         browser : chrome
-        command : npm run test:addToCart
+        # command : npm run test:addToCart
 
  register-flow-Test:
    runs-on: ubuntu-latest
@@ -32,4 +32,4 @@ jobs:
        uses: cypress-io/github-action@v5 
        with : 
         browser : chrome
-        command : npm run test:registerflow
+        # command : npm run test:registerflow
