@@ -1,7 +1,7 @@
 name: SanityBuild_Custom script 
 on:
  push:
-    
+
    branches:
      - main
 jobs:
@@ -18,3 +18,5 @@ jobs:
        uses: cypress-io/github-action@v5
        with:
         command: npm run test:addToCart
+        browser : firefox
+        
